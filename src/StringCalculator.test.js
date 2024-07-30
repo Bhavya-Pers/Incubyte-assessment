@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import StringCalculator from './StringCalculator';
 
-test('renders learn react link', () => {
-  render(<App />);
+test('renders heading String Calculator', () => {
+  render(<StringCalculator />);
   const linkElement = screen.getByText(/String Calculator/i);
   expect(linkElement).toBeInTheDocument();
 });
